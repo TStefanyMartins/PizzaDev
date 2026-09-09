@@ -10,3 +10,15 @@ telefone = int(input("Digite seu telefone: "))
 cliente[nome] = telefone
 
 print("Cliente cadastrado com sucesso!")
+
+
+if nome and telefone in cliente.items():
+    print(f"Nome: {nome}")
+    print(f"Telefone: {telefone}")
+    
+    confirmacao = input("Os dados estão corretos? (S/N): ")
+    
+    if confirmacao.upper() == "S":
+        print("Cadastro confirmado!")
+    else:
+        print("Cadastro cancelado.")
