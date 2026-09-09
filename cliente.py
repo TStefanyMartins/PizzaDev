@@ -20,5 +20,6 @@ if nome and telefone in cliente.items():
     
     if confirmacao.upper() == "S":
         print("Cadastro confirmado!")
-    else:
+    elif confirmacao.upper() == "N":
         print("Cadastro cancelado.")
+        exit()
